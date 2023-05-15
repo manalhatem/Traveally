@@ -9,6 +9,7 @@ Widget CustomText(
       FontWeight? fontWeight,
       String? fontFamily,
       TextOverflow? overflow,
+      FontStyle? fontStyle,
       int? maxLines,
       TextDecoration? decoration}) =>
     Text(
@@ -17,6 +18,7 @@ Widget CustomText(
       style: TextStyle(
         color: color,
         fontSize: fontSize,
+        fontStyle: fontStyle,
         fontWeight: fontWeight,
         fontFamily: fontFamily,
         decoration: decoration,

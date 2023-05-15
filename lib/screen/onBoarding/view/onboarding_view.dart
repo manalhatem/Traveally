@@ -4,10 +4,13 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:travel/screen/auth/register/view/register_view.dart';
 
+import '../../../components/my_navigate.dart';
 import '../../../components/style/colors.dart';
 import '../../../components/style/images.dart';
 import '../../../components/style/size.dart';
+import '../../../utilities/routes.dart';
 import '../controller/onboarding_cubit.dart';
 import '../controller/onboarding_states.dart';
 class OnBoardingScreen extends StatefulWidget {
@@ -87,6 +90,8 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                                          const Spacer(),
                                          GestureDetector(
                                              onTap: (){
+                                               cubit.currentIndex==2?
+                                                   navigateAndFinish(context: context,widget: AppRoutes.chooseAuth):
                                                _controller!.nextPage(duration: const Duration(milliseconds: 500),
                                                    curve: Curves.easeInOut);
                                              },
@@ -108,7 +113,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                                       mainAxisAlignment: MainAxisAlignment.center,
                                       children: List.generate( cubit.images.length, (index) {
                                         return Container(
-                                          width: cubit.currentIndex==index? width(context)*0.11:width(context)*0.0223,
+                                          width: cubit.currentIndex==index? width(context)*0.1:width(context)*0.0223,
                                           height: width(context)*0.0223,
                                           margin: const EdgeInsets.all(2),
                                           decoration: BoxDecoration(

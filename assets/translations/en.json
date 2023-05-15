@@ -1,5 +1,17 @@
 {
   "OnBoarding1": "Explore your interests",
   "OnBoarding2": "Find Your Travel Mate",
-  "OnBoarding3": "Plan your Trip"
+  "OnBoarding3": "Plan your Trip",
+  "SignUp": "Sign Up",
+  "LogIn": "Log In",
+  "ContinueWithGoogle": "Continue With Google",
+  "ContinueWithFaceBook": "Continue With FaceBook",
+  "Welcome": "Welcome !",
+  "Email": "Email",
+  "Password": "Password",
+  "ConfirmPassword": "Confirm Password",
+  "AlreadyHaveAcc": "Already Have Account",
+  "NotHaveAcc": "Don't have an Account ",
+  "ForgetPass": "Forget Password"
+
 }

@@ -1,5 +1,18 @@
 {
   "OnBoarding1": "استكشف الإهتمامات",
   "OnBoarding2": "اوجد رفيق سفرك",
-  "OnBoarding3": "خطط لرحلتك"
+  "OnBoarding3": "خطط لرحلتك",
+  "SignUp": "تسجيل جديد",
+  "LogIn": "تسجيل دخول",
+  "ContinueWithGoogle": "تسجيل ب جوجل",
+  "ContinueWithFaceBook": "تسجيل ب الفيس بوك",
+  "Welcome": " مرحبا !",
+  "Email": "البريد الإلكتروني",
+  "Password": "كلمة السر",
+  "ConfirmPassword": "تأكيد كلمة السر",
+  "AlreadyHaveAcc": "لدي حساب",
+  "NotHaveAcc": "ليس لدي حساب",
+  "ForgetPass": "هل نسيت كلمة المرور؟"
+
+
 }
