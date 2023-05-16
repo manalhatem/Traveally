@@ -12,6 +12,10 @@
   "ConfirmPassword": "Confirm Password",
   "AlreadyHaveAcc": "Already Have Account",
   "NotHaveAcc": "Don't have an Account ",
-  "ForgetPass": "Forget Password"
+  "ForgetPass": "Forget Password",
+  "Home": "Home",
+  "Explore": "Explore",
+  "Chats": "Chats",
+  "Profile": "Profile"
 
 }

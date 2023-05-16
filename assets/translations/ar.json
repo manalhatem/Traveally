@@ -12,7 +12,11 @@
   "ConfirmPassword": "تأكيد كلمة السر",
   "AlreadyHaveAcc": "لدي حساب",
   "NotHaveAcc": "ليس لدي حساب",
-  "ForgetPass": "هل نسيت كلمة المرور؟"
+  "ForgetPass": "هل نسيت كلمة المرور؟",
+  "Home": "الرئيسية",
+  "Explore": "استكشف",
+  "Chats": "محادثات",
+  "Profile": "الملف الشخصي"
 
 
 }

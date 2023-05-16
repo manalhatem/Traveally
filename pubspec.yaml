@@ -43,6 +43,7 @@ dependencies:
   animated_text_kit: ^4.2.2
   firebase_auth: ^4.5.0
   firebase_core: ^2.9.0
+  circular_bottom_navigation: ^2.3.0
 
 dev_dependencies:
   flutter_test:
