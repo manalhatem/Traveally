@@ -19,4 +19,7 @@ abstract class LocaleKeys {
   static const Explore = 'Explore';
   static const Chats = 'Chats';
   static const Profile = 'Profile';
+  static const AddComment = 'AddComment';
+
+
 }

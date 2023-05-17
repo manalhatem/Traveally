@@ -21,7 +21,7 @@ Route<dynamic> onGenerate(RouteSettings settings) {
     case AppRoutes.register:
       return MaterialPageRoute(builder: (context) => const RegisterScreen());
     case AppRoutes.home:
-      return MaterialPageRoute(builder: (context) => const MyHomePage());
+      return MaterialPageRoute(builder: (context) => const ButtonNavBar());
     default:
       return MaterialPageRoute(builder: (context) => const OnBoardingScreen());
   }

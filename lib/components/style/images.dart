@@ -8,5 +8,10 @@ class AppImages{
   static const backAuth ="assets/images/Pexels Photo by Guillaume Meurice.png";
   static const google="assets/images/akar-icons_google-fill.png";
   static const faceBook ="assets/images/akar-icons_facebook-fill.png";
+  static const profile ="assets/images/Ellipse 3.png";
+  static const location ="assets/images/loc.png";
+
+
+
 
 }

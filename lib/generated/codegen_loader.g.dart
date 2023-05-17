@@ -32,7 +32,9 @@ class CodegenLoader extends AssetLoader {
     "Home": "الرئيسية",
     "Explore": "استكشف",
     "Chats": "محادثات",
-    "Profile": "الملف الشخصي"
+    "Profile": "الملف الشخصي",
+    "AddComment": "اضف تعليق",
+
   };
   static const Map<String, dynamic> en = {
     "OnBoarding1": "Explore your interests",
@@ -52,7 +54,9 @@ class CodegenLoader extends AssetLoader {
     "Home": "Home",
     "Explore": "Explore",
     "Chats": "Chats",
-    "Profile": "Profile"
+    "Profile": "Profile",
+    "AddComment": "Add Comment"
+
   };
   static const Map<String, Map<String, dynamic>> mapLocales = {
     "ar": ar,

@@ -10,14 +10,14 @@ import '../explore/view/explore_view.dart';
 import '../home/view/home_view.dart';
 import '../profile/view/profile_view.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key}) : super(key: key);
+class ButtonNavBar extends StatefulWidget {
+  const ButtonNavBar({Key? key}) : super(key: key);
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _ButtonNavBarState createState() => _ButtonNavBarState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _ButtonNavBarState extends State<ButtonNavBar> {
   int selectedPos = 0;
 
   double bottomNavBarHeight = 60;
@@ -84,18 +84,9 @@ class _MyHomePageState extends State<MyHomePage> {
       selectedIconColor: AppColors.mainColor,
       normalIconColor: AppColors.whiteColor,
       barHeight: bottomNavBarHeight,
-      // use either barBackgroundColor or barBackgroundGradient to have a gradient on bar background
       barBackgroundColor: AppColors.mainColor,
-      // barBackgroundGradient: LinearGradient(
-      //   begin: Alignment.bottomCenter,
-      //   end: Alignment.topCenter,
-      //   colors: [
-      //     Colors.blue,
-      //     Colors.red,
-      //   ],
-      // ),
-      backgroundBoxShadow: <BoxShadow>[
-        const BoxShadow(color: Colors.black45, blurRadius: 10.0),
+      backgroundBoxShadow: const <BoxShadow>[
+         BoxShadow(color: Colors.black45, blurRadius: 10.0),
       ],
       animationDuration: const Duration(milliseconds: 300),
       selectedCallback: (int? selectedPos) {
