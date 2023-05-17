@@ -16,7 +16,6 @@ void main() async{
       fallbackLocale: const Locale('ar'),
       child: const MyApp()));
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
