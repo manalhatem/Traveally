@@ -34,6 +34,11 @@ class CodegenLoader extends AssetLoader {
     "Chats": "محادثات",
     "Profile": "الملف الشخصي",
     "AddComment": "اضف تعليق",
+    "Posts": "المنشورات",
+    "Saves": "المحفوظات",
+    "Visited": "الزيارات",
+    "Destination": "المقصد",
+    "AddNew": "إضافه جديده"
 
   };
   static const Map<String, dynamic> en = {
@@ -55,7 +60,12 @@ class CodegenLoader extends AssetLoader {
     "Explore": "Explore",
     "Chats": "Chats",
     "Profile": "Profile",
-    "AddComment": "Add Comment"
+    "AddComment": "Add Comment",
+    "Posts": "Posts",
+    "Saves": "Saves",
+    "Visited": "Visited",
+    "Destination": "Destination",
+    "AddNew": "Add New"
 
   };
   static const Map<String, Map<String, dynamic>> mapLocales = {

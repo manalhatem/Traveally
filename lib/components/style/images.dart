@@ -10,6 +10,7 @@ class AppImages{
   static const faceBook ="assets/images/akar-icons_facebook-fill.png";
   static const profile ="assets/images/Ellipse 3.png";
   static const location ="assets/images/loc.png";
+  static const edit ="assets/images/Group 166.png";
 
 
 

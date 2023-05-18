@@ -10,4 +10,5 @@ class HomeCubit extends Cubit<HomeStates> {
   static HomeCubit get(context) => BlocProvider.of(context);
 
   TextEditingController commentController=TextEditingController();
+
 }

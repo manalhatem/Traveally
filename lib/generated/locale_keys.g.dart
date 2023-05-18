@@ -20,6 +20,10 @@ abstract class LocaleKeys {
   static const Chats = 'Chats';
   static const Profile = 'Profile';
   static const AddComment = 'AddComment';
-
+  static const Posts = 'Posts';
+  static const Saves = 'Saves';
+  static const Visited = 'Visited';
+  static const Destination = 'Destination';
+  static const AddNew = 'AddNew';
 
 }

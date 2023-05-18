@@ -2,12 +2,15 @@ import 'package:circular_bottom_navigation/circular_bottom_navigation.dart';
 import 'package:circular_bottom_navigation/tab_item.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:travel/components/custom_text.dart';
+import 'package:travel/components/style/size.dart';
 
 import '../../components/style/colors.dart';
 import '../../generated/locale_keys.g.dart';
 import '../chat/view/chat_view.dart';
 import '../explore/view/explore_view.dart';
 import '../home/view/home_view.dart';
+import '../profile/components/alert_dialog.dart';
 import '../profile/view/profile_view.dart';
 
 class ButtonNavBar extends StatefulWidget {
@@ -63,9 +66,10 @@ class _ButtonNavBarState extends State<ButtonNavBar> {
 
   List<Widget> screens = [
     const HomeScreen(),
-    const ProfileScreen(),
+    const ExploreScreen(),
     const ChatScreen(),
-    const ExploreScreen()
+    const ProfileScreen(),
+
   ];
 
   @override
@@ -73,6 +77,17 @@ class _ButtonNavBarState extends State<ButtonNavBar> {
     return Scaffold(
       body: screens[selectedPos],
       bottomNavigationBar: bottomNav(),
+      floatingActionButton:selectedPos==3? InkWell(
+        onTap: (){
+          showDialog(context: context, builder: (context){
+            return const CustomAlertDialog();
+          });
+        },
+        child: Padding(
+          padding: EdgeInsetsDirectional.only(end: width(context)*0.012),
+          child: Image.asset("assets/images/Group 216.png",width: width(context)*0.15,),
+        ),
+      ):null,
     );
   }
 
