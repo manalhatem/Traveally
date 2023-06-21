@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:travel/components/style/images.dart';
+import '../../../components/custom_row.dart';
 import '../../../components/custom_text.dart';
 import '../../../components/style/colors.dart';
 import '../../../components/style/size.dart';
@@ -21,37 +22,7 @@ class HomeScreen extends StatelessWidget {
           return SafeArea(child: Scaffold(
             body: Column(
               children: [
-                Padding(
-                  padding:  EdgeInsets.only(right: width(context)* 0.05,left: width(context)* 0.05,
-                      top:width(context)* 0.02),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Row(
-                        children: [
-                          CustomText(
-                              text: 'ally',
-                              color: AppColors.mainColor,
-                              fontFamily: "Poppins",
-                              fontWeight: FontWeight.w600,
-                              fontSize: AppFonts.h1,
-                              fontStyle: FontStyle.italic),
-                          CustomText(
-                              text: 'Trave',
-                              color: Colors.black,
-                              fontFamily: "Poppins",
-                              fontWeight: FontWeight.w600,
-                              fontSize: AppFonts.h1,
-                              fontStyle: FontStyle.italic),
-                                          ],
-                      ),
-                      const CircleAvatar(
-                        radius: 28,
-                        backgroundImage:AssetImage(AppImages.profile),
-                      )
-                    ],
-                  ),
-                ),
+                const CustomMainRow(),
                 const Divider(),
                 Expanded(
                   child: ListView.builder(

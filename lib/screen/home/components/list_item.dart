@@ -4,6 +4,7 @@ import '../../../components/custom_text.dart';
 import '../../../components/style/colors.dart';
 import '../../../components/style/images.dart';
 import '../../../components/style/size.dart';
+import '../../another_profile/view/another_profile_view.dart';
 import 'add_comment.dart';
 class ListItem extends StatelessWidget {
   final String name;
@@ -27,10 +28,18 @@ class ListItem extends StatelessWidget {
           padding: EdgeInsets.symmetric(horizontal: width(context)*0.04),
           child: Row(
             children: [
-               CircleAvatar(
-                radius: 20,
-                backgroundImage:AssetImage(profileImg),
+               InkWell(
+                 onTap:(){
+                   Navigator.push(context, MaterialPageRoute(builder: (context){
+                     return AnotherProfileScreen(img: profileImg,backGround: "assets/images/Pexels Photo by Asad Photo Maldives.png",
+                      numTrip: '10 رحلات', name: name,);
+                   }));
+                 },
+                 child: CircleAvatar(
+                  radius: 20,
+                  backgroundImage:AssetImage(profileImg),
               ),
+               ),
               SizedBox(width: width(context)*0.014),
               CustomText(text: name, color: Colors.black,fontSize: AppFonts.t6,fontFamily: "Poppins", fontWeight: FontWeight.w300),
               const Spacer(),

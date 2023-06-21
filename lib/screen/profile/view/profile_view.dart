@@ -34,7 +34,7 @@ class ProfileScreen extends StatelessWidget {
                   ),
                   SizedBox(height: height(context)*0.02,),
                   const CustomProfileImg(backGroundImg: "assets/images/background.png", name:  "120 رحلة", profileImg: AppImages.profile,),
-                   CourseDetailsScreen(cubit: cubit),
+                  ProfileTabBarScreen(cubit: cubit),
                 ],
               ),
             ),

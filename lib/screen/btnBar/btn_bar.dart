@@ -23,7 +23,7 @@ class ButtonNavBar extends StatefulWidget {
 class _ButtonNavBarState extends State<ButtonNavBar> {
   int selectedPos = 0;
 
-  double bottomNavBarHeight = 60;
+  double bottomNavBarHeight = 50;
 
   List<TabItem> tabItems = List.of([
     TabItem(
@@ -87,6 +87,9 @@ class _ButtonNavBarState extends State<ButtonNavBar> {
           padding: EdgeInsetsDirectional.only(end: width(context)*0.012),
           child: Image.asset("assets/images/Group 216.png",width: width(context)*0.15,),
         ),
+      ):selectedPos==2?Padding(
+        padding: EdgeInsetsDirectional.only(end: width(context)*0.012),
+        child: Image.asset("assets/images/Group 198.png",width: width(context)*0.15,),
       ):null,
     );
   }
@@ -98,6 +101,9 @@ class _ButtonNavBarState extends State<ButtonNavBar> {
       selectedPos: selectedPos,
       selectedIconColor: AppColors.mainColor,
       normalIconColor: AppColors.whiteColor,
+      circleSize: 48,
+      iconsSize: 26,
+      circleStrokeWidth: 3,
       barHeight: bottomNavBarHeight,
       barBackgroundColor: AppColors.mainColor,
       backgroundBoxShadow: const <BoxShadow>[

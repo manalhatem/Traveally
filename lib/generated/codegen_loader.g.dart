@@ -38,7 +38,13 @@ class CodegenLoader extends AssetLoader {
     "Saves": "المحفوظات",
     "Visited": "الزيارات",
     "Destination": "المقصد",
-    "AddNew": "إضافه جديده"
+    "AddNew": "إضافه جديده",
+    "Private": "الدردشات",
+    "Groups": "المجموعات",
+    "Stories": "الحاله",
+    "NoChat": "لا يوجد محادثات",
+    "NoGroup": "لا يوجد مجموعات",
+    "NoStories": "لا يوجد حالات"
 
   };
   static const Map<String, dynamic> en = {
@@ -65,7 +71,13 @@ class CodegenLoader extends AssetLoader {
     "Saves": "Saves",
     "Visited": "Visited",
     "Destination": "Destination",
-    "AddNew": "Add New"
+    "AddNew": "Add New",
+    "Private": "Chats",
+    "Groups": "Groups",
+    "Stories": "Stories",
+    "NoChat": "No Chats",
+    "NoGroup": "No Groups",
+    "NoStories": "No Status"
 
   };
   static const Map<String, Map<String, dynamic>> mapLocales = {

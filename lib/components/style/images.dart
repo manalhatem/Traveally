@@ -11,6 +11,12 @@ class AppImages{
   static const profile ="assets/images/Ellipse 3.png";
   static const location ="assets/images/loc.png";
   static const edit ="assets/images/Group 166.png";
+  static const dots ="assets/images/Ellipse 52.png";
+  static const loading ="assets/images/99274-loading.gif";
+  static const chatEmpty="assets/images/16289-no-comments.gif";
+  static const send="assets/images/send.png";
+
+
 
 
 

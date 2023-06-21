@@ -22,5 +22,11 @@
   "Saves": "Saves",
   "Visited": "Visited",
   "Destination": "Destination",
-  "AddNew": "Add New"
+  "AddNew": "Add New",
+  "Private": "Chats",
+  "Groups": "Groups",
+  "Stories": "Stories",
+  "NoChat": "No Chats",
+  "NoGroup": "No Groups",
+  "NoStories": "No Status"
 }

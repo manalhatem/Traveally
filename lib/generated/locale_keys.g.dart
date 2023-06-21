@@ -25,5 +25,11 @@ abstract class LocaleKeys {
   static const Visited = 'Visited';
   static const Destination = 'Destination';
   static const AddNew = 'AddNew';
+  static const Private = 'Private';
+  static const Groups = 'Groups';
+  static const Stories = 'Stories';
+  static const NoChat = 'NoChat';
+  static const NoGroup = 'NoGroup';
+  static const NoStories = 'NoStories';
 
 }

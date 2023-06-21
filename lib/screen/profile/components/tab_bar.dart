@@ -11,15 +11,15 @@ import '../../../components/style/colors.dart';
 import '../../../components/style/size.dart';
 import '../../../generated/locale_keys.g.dart';
 
-class CourseDetailsScreen extends StatefulWidget {
+class ProfileTabBarScreen extends StatefulWidget {
   final ProfileCubit cubit;
-  const CourseDetailsScreen({super.key, required this.cubit});
+  const ProfileTabBarScreen({super.key, required this.cubit});
 
   @override
-  State<CourseDetailsScreen> createState() => _CourseDetailsScreenState();
+  State<ProfileTabBarScreen> createState() => _ProfileTabBarScreenState();
 }
 
-class _CourseDetailsScreenState extends State<CourseDetailsScreen>
+class _ProfileTabBarScreenState extends State<ProfileTabBarScreen>
     with SingleTickerProviderStateMixin {
   late TabController tabController;
 

@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:travel/screen/another_profile/view/another_profile_view.dart';
+import 'package:travel/screen/chat/components/chat_details.dart';
+import 'package:travel/screen/chat/controller/chat_cubit.dart';
 import 'package:travel/screen/splash.dart';
 import '../screen/auth/chooseAuth.dart';
 import '../screen/auth/login/view/login_view.dart';
@@ -22,6 +25,10 @@ Route<dynamic> onGenerate(RouteSettings settings) {
       return MaterialPageRoute(builder: (context) => const RegisterScreen());
     case AppRoutes.home:
       return MaterialPageRoute(builder: (context) => const ButtonNavBar());
+    // case AppRoutes.chatDetails:
+    //   return MaterialPageRoute(builder: (context) =>  const ChatDetails());
+    // case AppRoutes.anotherProfile:
+    //   return MaterialPageRoute(builder: (context) =>  const AnotherProfileScreen());
     default:
       return MaterialPageRoute(builder: (context) => const OnBoardingScreen());
   }

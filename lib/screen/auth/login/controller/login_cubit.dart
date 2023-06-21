@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../components/my_navigate.dart';
 import '../../../../components/show_snakBar.dart';
+import '../../../../shared/cache_helper.dart';
 import '../../../../utilities/routes.dart';
 import 'login_states.dart';
 
@@ -30,6 +31,8 @@ class LoginCubit extends Cubit<LoginStates> {
           .then((value) {
         print(value.user);
         navigateAndFinish(context: context, widget: AppRoutes.home);
+        CacheHelper.saveData("email", emailController.text);
+        CacheHelper.saveData("id", value.user!.uid);
       });
     } on FirebaseAuthException catch (e) {
       if (e.code == 'user-not-found') {
@@ -43,6 +46,7 @@ class LoginCubit extends Cubit<LoginStates> {
             context: context, text: 'كلمة المرور غير صحيحه. ', success: false);
         print('Wrong password provided for that user.');
       }
+
     }
   }
 }

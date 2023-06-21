@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../components/my_navigate.dart';
 import '../../../../components/show_snakBar.dart';
+import '../../../../shared/cache_helper.dart';
 import '../../../../utilities/routes.dart';
 import 'register_states.dart';
 
@@ -37,6 +38,7 @@ class RegisterCubit extends Cubit<RegisterStates> {
           .then((value) {
         print(value.user);
         navigateAndFinish(context: context, widget: AppRoutes.home);
+        CacheHelper.saveData("email", emailController.text);
       });
     } on FirebaseAuthException catch (e) {
       if (e.code == 'weak-password') {
